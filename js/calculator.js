@@ -12,7 +12,16 @@ const inputField = document.getElementById('input-string');
             let inputEquation= inputText.replace(/cos|sin|tan|sqrt/gi, function(x){
                 return x.replace(x, 'Math.'+x);
             })
-            const result= eval(inputEquation);
-            const displayResult= document.getElementById('input-string');
-            displayResult.value=result+'';  
+            
+            console.log(typeof eval(inputEquation));
+            if (typeof eval(inputEquation) != 'undefined'){
+                const result= eval(inputEquation);
+                const displayResult= document.getElementById('input-string');
+                displayResult.value=result+'';  
+            }else{
+               const displayError= document.getElementById('input-string');
+               displayError.value =''+'MATH ERROR';
+                  
+            }
+            
         }
