@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <!-- css of bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; color: aquamarine;">Scientific Calculator</h1>
+    </header>
+    <main>
+
+        <section class="container">
+            <div class="calculator">
+                <div id="" class="main-screen">
+                    <div class="input-screen mb-2">
+                        <input type="text" id='input-string' >
+                    </div>
+                </div>
+                <div id="input-part">
+                    <div class="row  d-flex justify-content-around align-items-center">
+                        <input type="button" value="sin"  class="col m-2 bg-primary input-btn">
+                        <input type="button" value="cos"  class="col m-2 bg-primary input-btn">
+                        <input type="button" value="tan"  class="col m-2 bg-primary input-btn">
+                        <input type="button" value="sqrt" class="col m-2 bg-primary input-btn">
+                        <input type="button" value="clear"class="col m-2 bg-primary input-btn">
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <input type="button" value="1" class="col m-2 input-btn">
+                        <input type="button" value="2" class="col m-2 input-btn">
+                        <input type="button" value="3" class="col m-2 input-btn">
+                        <input type="button" value="4" class="col m-2 input-btn">
+                        <input type="button" value="5" class="col m-2 input-btn">
+                    </div>
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <input type="button" value="6" class="col m-2 input-btn">
+                        <input type="button" value="7" class="col m-2 input-btn">
+                        <input type="button" value="8" class="col m-2 input-btn">
+                        <input type="button" value="9" class="col m-2 input-btn">
+                        <input type="button" value="0" class="col m-2 input-btn">
+                    </div>
+                    <div class="row  d-flex justify-content-between align-items-center">
+                        <input type="button" value="." class="col m-2 input-btn">
+                        <input type="button" value="+" class="col bg-warning m-2 input-btn">
+                        <input type="button" value="-" class="col bg-warning m-2 input-btn">
+                        <input type="button" value="*" class="col bg-warning m-2 input-btn">
+                        <input type="button" value="/" class="col bg-warning m-2 input-btn">
+                    </div>
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <input type="button" value="(" class="col-2 bg-warning m-2 input-btn">
+                        <input type="button" value=")" class="col-4 bg-warning m-2 input-btn">
+                        <input type="button" value="=" class="col-4 bg-info m-2 input-btn">
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+    </main>
+    <script src="js/calculator.js"></script>
+    <!-- js link of bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
